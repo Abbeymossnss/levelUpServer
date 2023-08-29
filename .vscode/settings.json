@@ -1,7 +1,7 @@
 {
     "python.linting.pylintArgs": [
         "--load-plugins=pylint_django",
-        "--django-settings-module=honeyrae.settings",
+        "--django-settings-module=levelup.settings",
     ],
     "[python]": {
         "editor.defaultFormatter": "ms-python.autopep8"

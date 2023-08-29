@@ -1,0 +1,35 @@
+[
+  {
+    "model": "levelupapi.event",
+    "pk": 1,
+    "fields": {
+      "organizer": 1,
+      "date": "2020-08-29",
+      "game": 1,
+      "game_type": 1,
+      "attendees": [1]
+    }
+  },
+  {
+    "model": "levelupapi.event",
+    "pk": 2,
+    "fields": {
+      "organizer": 1,
+      "date": "2020-08-26",
+      "game": 2,
+      "game_type": 2,
+      "attendees": [1]
+    }
+  },
+  {
+    "model": "levelupapi.event",
+    "pk": 3,
+    "fields": {
+      "organizer":1 ,
+      "date": "2020-08-24",
+      "game": 3,
+      "game_type": 3,
+      "attendees":[1]
+    }
+  }
+]

@@ -40,11 +40,15 @@ class GameView(ViewSet):
         )
         serializer = GameSerializer(game)
         return Response(serializer.data)
-        
-    
+class GameTypeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GameType
+        fields = ('id', 'label', 'description', )
 class GameSerializer(serializers.ModelSerializer):
     """JSON serializer for game types
     """
+    game_type = GameTypeSerializer(many=False)
+
     class Meta:
         model = Game
         fields = ('id', 'title', 'maker', 'game_type', 'num_of_players', 'skill_level',)
